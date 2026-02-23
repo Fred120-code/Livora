@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Audiowide, DM_Sans, Rethink_Sans } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Components/Navbar/Navbar";
 
 const dmSans = DM_Sans({
   variable: "--font-dmSans",
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} ${audiowide.variable} ${rethink.variable}`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>
