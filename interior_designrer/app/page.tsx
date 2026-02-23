@@ -1,8 +1,9 @@
+import Index from "./Pages/Index";
 
 export default function Home() {
   return (
-   <div>
-    
-   </div>
+    <>
+      <Index />
+    </>
   );
 }
