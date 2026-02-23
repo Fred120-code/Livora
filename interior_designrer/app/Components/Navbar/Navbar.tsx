@@ -41,17 +41,15 @@ const Navbar = () => {
   const [isFixed, setIsFixed] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleScrooll = () => {
-      setIsFixed(window.scrollY > 50);
-      window.addEventListener("scroll", handleScrooll);
-      return () => window.removeEventListener("scroll", handleScrooll);
-    };
-  });
+    const handleScrooll = () => setIsFixed(window.scrollY > 50);
+    window.addEventListener("scroll", handleScrooll);
+    return () => window.removeEventListener("scroll", handleScrooll);
+  }, []);
 
   return (
     <>
       <div
-        className={`w-full transition-all py-5 duration-500 fixed top-0 left-0 z-50 fixed
+        className={`w-full transition-all py-5 duration-500 fixed top-0 left-0 z-50 fixed-nav
              ${isFixed ? "bg-black" : "bg-transparent"}`}
       >
         <div
