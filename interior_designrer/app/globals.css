@@ -52,7 +52,7 @@ body {
 
 /* MarqueeText Section */
 .marquee-text {
-  -webkit-text-stroke:2px black;
+  -webkit-text-stroke: 2px black;
   color: transparent;
 }
 
@@ -67,5 +67,70 @@ body {
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* About Section */
+.about-wrap {
+  position: relative;
+}
+
+.about-wrap:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 100%;
+  background-color: var(--white);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.about-content {
+  position: relative;
+}
+
+.about-content:after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: var(--prim-dark);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: var(--font-rethink);
+}
+
+.about-content:nth-child(1):after {
+  content: "01";
+}
+
+.about-content:nth-child(2):after {
+  content: "02";
+}
+
+.about-content:nth-child(3):after {
+  content: "03";
+}
+
+/* About MQ Section */
+
+@media (max-width: 1000px) {
+  .about-wrap:after {
+    display: none;
+  }
+
+  .about-content:after {
+    display: none;
   }
 }
