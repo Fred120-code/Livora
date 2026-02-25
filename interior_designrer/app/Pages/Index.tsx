@@ -3,6 +3,7 @@
 import About from "./About/page";
 import Contact from "./Contact/page";
 import Faqs from "./Faqs/page";
+import Gallery from "./Gallerys/page";
 import Hero from "./Hero/page";
 import MarqueeSlider1 from "./MarqueeSlider1/page";
 import OurExpertise from "./Our-Expertise/page";
@@ -20,6 +21,7 @@ const Index = () => {
       <Testimonial />
       <Faqs />
       <Contact />
+      <Gallery />
     </>
   );
 };
