@@ -171,3 +171,12 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* Contact Section */
+
+.contact{
+  background: url(../public/Images/contact.bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

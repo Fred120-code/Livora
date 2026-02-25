@@ -1,6 +1,7 @@
 "use client";
 
 import About from "./About/page";
+import Contact from "./Contact/page";
 import Faqs from "./Faqs/page";
 import Hero from "./Hero/page";
 import MarqueeSlider1 from "./MarqueeSlider1/page";
@@ -18,6 +19,7 @@ const Index = () => {
       <OurExpertise />
       <Testimonial />
       <Faqs />
+      <Contact />
     </>
   );
 };
