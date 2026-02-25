@@ -28,7 +28,7 @@ const navLinks: NavLink[] = [
   },
   {
     label: "Faq's",
-    href: "#faq's",
+    href: "#faqs",
   },
   {
     label: "Contact Us",
